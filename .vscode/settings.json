@@ -1,6 +1,6 @@
 {
     "sonarlint.connectedMode.project": {
         "connectionId": "aleix-white1",
-        "projectKey": "Aleix-White1_BASSonarCloud"
+        "projectKey": "aleix-white1_sonar"
     }
 }

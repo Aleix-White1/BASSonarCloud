@@ -4,5 +4,6 @@
     <Page id="page" title="{i18n>title}">
         <content />
         <Title text="Hola" />
+        asdasdasdasdasdasd a sdsad asasd asd asd
     </Page>
-</mvc:View>
+
