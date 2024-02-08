@@ -82,13 +82,9 @@ sap.ui.define([
                 const numbers = [10, 2, 30, 1, 5];
 
                 if (a == b) { // Noncompliant: using non-strict equality '=='
-                    return ( // Noncompliant: don't use children and dangerouslySetInnerHTML at the same time
-                        
-                    );
+                    return a;
                 } else {
-                    return ( // Noncompliant: don't use children and dangerouslySetInnerHTML at the same time
-                       
-                }
+                    return b;
                 
 
 
