@@ -80,6 +80,13 @@ sap.ui.define([
                 console.log(checkEqual(0, false)); // Output: "Equal"
 
                 const numbers = [10, 2, 30, 1, 5];
+                
+                if (numbers.indexOf("blue") > 0){
+                    console.log("Hola")
+                }
+
+                if (value != value){processNaN(value);}
+                    
 
                 if (a == b) { // Noncompliant: using non-strict equality '=='
                     return a;
@@ -87,7 +94,7 @@ sap.ui.define([
                     return b;
                 
                 }
-
+                
 
             }
 
