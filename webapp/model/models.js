@@ -22,7 +22,34 @@ sap.ui.define([
                     return oModel;
                     delete myArray[2];
                 }
-                
+                let SmyArray = ['a', 'b', 'c', 'd'];
+                var oModel = new JSONModel(Device);
+                if (oModel === NaN){
+                    oModel.setDefaultBindingMode("OneWay");
+                    return oModel;
+                    delete myArray[2];
+                }
+                let SDmyArray = ['a', 'b', 'c', 'd'];
+                var oModel = new JSONModel(Device);
+                if (oModel === NaN){
+                    oModel.setDefaultBindingMode("OneWay");
+                    return oModel;
+                    delete myArray[2];
+                }
+                let DAmyArray = ['a', 'b', 'c', 'd'];
+                var oModel = new JSONModel(Device);
+                if (oModel === NaN){
+                    oModel.setDefaultBindingMode("OneWay");
+                    return oModel;
+                    delete myArray[2];
+                }
+                let FDmyArray = ['a', 'b', 'c', 'd'];
+                var oModel = new JSONModel(Device);
+                if (oModel === NaN){
+                    oModel.setDefaultBindingMode("OneWay");
+                    return oModel;
+                    delete myArray[2];
+                }
         }
     };
 });
