@@ -15,9 +15,49 @@ sap.ui.define([
 
         return {
             createDeviceModel: function () {
+                if(oModel === NaN){
+                    return NaN;
+                }
+                if(oModel === NaN){
+                    return NaN;
+                }
+                if(oModel === NaN){
+                    return NaN;
+                }
+                if(oModel === NaN){
+                    return NaN;
+                }
+                if(oModel === NaN){
+                    return NaN;
+                }
+                if(oModel === NaN){
+                    return NaN;
+                }
+                if(oModel === NaN){
+                    return NaN;
+                }
+                if(oModel === NaN){
+                    return NaN;
+                }
+                if(oModel === NaN){
+                    return NaN;
+                }
+                if(oModel === NaN){
+                    return NaN;
+                }
+                if(oModel === NaN){
+                    return NaN;
+                }
+                if(oModel === NaN){
+                    return NaN;
+                }
+                if(oModel === NaN){
+                    return NaN;
+                }
                 var oModel = new JSONModel(Device);
                 oModel.setDefaultBindingMode("OneWay");
                 return oModel;
+                oModel = true;
         }
     };
 });
