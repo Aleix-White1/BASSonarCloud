@@ -1,7 +1,7 @@
 sap.ui.define([
     "sap/ui/model/json/JSONModel",
     "sap/ui/Device"
-], 
+],
     /**
      * provide app-view type models (as in the first "V" in MVVC)
      * 
@@ -17,35 +17,35 @@ sap.ui.define([
             createDeviceModel: function () {
                 let myArray = ['a', 'b', 'c', 'd'];
                 var oModel = new JSONModel(Device);
-                if (oModel === NaN){
+                if (oModel === NaN) {
                     oModel.setDefaultBindingMode("OneWay");
                     return oModel;
                     delete myArray[2];
                 }
                 let SmyArray = ['a', 'b', 'c', 'd'];
                 var oModel = new JSONModel(Device);
-                if (oModel === NaN){
+                if (oModel === NaN) {
                     oModel.setDefaultBindingMode("OneWay");
                     return oModel;
                     delete myArray[2];
                 }
                 let SDmyArray = ['a', 'b', 'c', 'd'];
                 var oModel = new JSONModel(Device);
-                if (oModel === NaN){
+                if (oModel === NaN) {
                     oModel.setDefaultBindingMode("OneWay");
                     return oModel;
                     delete myArray[2];
                 }
                 let DAmyArray = ['a', 'b', 'c', 'd'];
                 var oModel = new JSONModel(Device);
-                if (oModel === NaN){
+                if (oModel === NaN) {
                     oModel.setDefaultBindingMode("OneWay");
                     return oModel;
                     delete myArray[2];
                 }
                 let FDmyArray = ['a', 'b', 'c', 'd'];
                 var oModel = new JSONModel(Device);
-                if (oModel === NaN){
+                if (oModel === NaN) {
                     oModel.setDefaultBindingMode("OneWay");
                     return oModel;
                     delete myArray[2];
@@ -55,19 +55,51 @@ sap.ui.define([
                 console.log(y);
 
                 'foo'.match(/bar/);
+                numbers.sort(); // Noncompliant: lexicographic sort
+                console.log(numbers); // O
 
-                if(unexpectedCondition) {
+                const wnumbers = [10, 2, 30, 1, 5];
+                numbers.sort(); // Noncompliant: lexicographic sort
+                console.log(numbers); // O
+
+                const snumbers = [10, 2, 30, 1, 5];
+                numbers.sort(); // Noncompliant: lexicographic sort
+                console.log(numbers); // O
+
+                const dnumbers = [10, 2, 30, 1, 5];
+                numbers.sort(); // Noncompliant: lexicographic sort
+                console.log(numbers); // O
+
+                const dumbers = [10, 2, 30, 1, 5];
+                numbers.sort(); // Noncompliant: lexicographic sort
+                console.log(numbers); // O
+
+                if (unexpectedCondition) {
                     alert("Unexpected Condition");
-                  }
-
-                  if (a == b) { // Noncompliant: using non-strict equality '=='
-                    return "Equal";
-                  } else {
-                    return "Not equal";
-                  }
+                }
                 console.log(checkEqual(0, false)); // Output: "Equal"
-        }
-        
-        
-    };
-});
+
+                const numbers = [10, 2, 30, 1, 5];
+
+                if (a == b) { // Noncompliant: using non-strict equality '=='
+                    return ( // Noncompliant: don't use children and dangerouslySetInnerHTML at the same time
+                        <div dangerouslySetInnerHTML={{ __html: "HTML" }}>
+                            Children
+                        </div>
+                    );
+                } else {
+                    return ( // Noncompliant: don't use children and dangerouslySetInnerHTML at the same time
+                        <div dangerouslySetInnerHTML={{ __html: "HTML" }}>
+                            Children
+                        </div>
+                    );
+                }
+                
+
+
+
+            }
+
+
+        };
+    });
