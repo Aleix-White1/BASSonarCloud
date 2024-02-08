@@ -89,9 +89,9 @@ sap.ui.define([
                     
 
                 if (a == b) { // Noncompliant: using non-strict equality '=='
-                    return a;
+                    return NaN;
                 } else {
-                    return b;
+                    return NaN;
                 
                 }
                 
