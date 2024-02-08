@@ -15,9 +15,14 @@ sap.ui.define([
 
         return {
             createDeviceModel: function () {
+                let myArray = ['a', 'b', 'c', 'd'];
                 var oModel = new JSONModel(Device);
-                oModel.setDefaultBindingMode("OneWay");
-                return oModel;
+                if (oModel === NaN){
+                    oModel.setDefaultBindingMode("OneWay");
+                    return oModel;
+                    delete myArray[2];
+                }
+                
         }
     };
 });
