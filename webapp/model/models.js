@@ -50,6 +50,24 @@ sap.ui.define([
                     return oModel;
                     delete myArray[2];
                 }
+                x = [1, 2];
+                var y = x / 4;
+                console.log(y);
+
+                'foo'.match(/bar/);
+
+                if(unexpectedCondition) {
+                    alert("Unexpected Condition");
+                  }
+
+                  if (a == b) { // Noncompliant: using non-strict equality '=='
+                    return "Equal";
+                  } else {
+                    return "Not equal";
+                  }
+                console.log(checkEqual(0, false)); // Output: "Equal"
         }
+        
+        
     };
 });
