@@ -83,16 +83,11 @@ sap.ui.define([
 
                 if (a == b) { // Noncompliant: using non-strict equality '=='
                     return ( // Noncompliant: don't use children and dangerouslySetInnerHTML at the same time
-                        <div dangerouslySetInnerHTML={{ __html: "HTML" }}>
-                            Children
-                        </div>
+                        
                     );
                 } else {
                     return ( // Noncompliant: don't use children and dangerouslySetInnerHTML at the same time
-                        <div dangerouslySetInnerHTML={{ __html: "HTML" }}>
-                            Children
-                        </div>
-                    );
+                       
                 }
                 
 
